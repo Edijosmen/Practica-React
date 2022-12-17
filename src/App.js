@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-
+//import Greting from './components/pure/greting';
+//import GretingF from './components/pure/gretingF';
+import TasklistComponent from './components/container/task_list'
 function App() {
   return (
     <div className="App">
@@ -8,15 +10,11 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          {/* <Greting name="edinson"></Greting> */}
+         {/*  <GretingF name ="edison de"></GretingF> */}
+          <TasklistComponent></TasklistComponent>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       
       </header>
     </div>
   );
